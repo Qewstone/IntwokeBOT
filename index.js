@@ -57,6 +57,21 @@ client.on("ready", function() {
   console.log("Ready");
 });
 
+client.on("message", async messga => {
+  if(message.author.bot) return;
+  if(message.channel.type === "dm") return;
+  
+  let prefix = "i!";
+  let messageArray = message.content.split(" ");
+  let cmd = messageArray[0];
+  let args = messageArray.slice(1);
+
+  if(cmd === `${prefix}test`){
+    return message.channel.send("Test");
+  }
+
+});
+
 client.on('ready', () => {
   console.log('Bot loaded');
   client.user.setPresence({ game: { name: `на доброго ззигера`, type: 3 } }).catch();

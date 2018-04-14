@@ -66,8 +66,8 @@ client.on("message", async message => {
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
 
-  if(cmd === `${prefix}hello`){
-    return message.channel.send("Hello!");
+  if(cmd === `${prefix}привет`){
+    return message.channel.send("Привет! Добро пожаловать, если ты тут впервые!");
   }
 
 });

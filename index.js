@@ -57,7 +57,7 @@ client.on("ready", function() {
   console.log("Ready");
 });
 
-client.on("message", async messga => {
+client.on("message", async message => {
   if(message.author.bot) return;
   if(message.channel.type === "dm") return;
   
@@ -66,8 +66,8 @@ client.on("message", async messga => {
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
 
-  if(cmd === `${prefix}test`){
-    return message.channel.send("Test");
+  if(cmd === `${prefix}hello`){
+    return message.channel.send("Hello!");
   }
 
 });

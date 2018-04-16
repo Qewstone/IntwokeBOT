@@ -84,4 +84,4 @@ client.on('ready', () => {
   setInterval(changeColor, config.speed);
 });
 
-client.login("123");
+client.login("NDI5ODM3Mjk3OTAzNDY4NTQ0.DaHcwA.PdypKo02YvLGoFrz1deD4VZTKOk");

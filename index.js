@@ -77,7 +77,7 @@ client.on("message", async message => {
 client.on('ready', () => {
   console.log('Bot loaded');
   client.user.setPresence({ game: { name: `на доброго ззигера`, type: 3 } }).catch();
-  client.channels.get('417374192418160652');
+  client.channels.get('429080010041589760');
 });
 
 client.on('ready', () => {

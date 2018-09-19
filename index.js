@@ -89,7 +89,7 @@ client.on('ready', () => {
 client.on('message', function(message) {
    if (message.author.equals(bot.user)) return;
 
-   if (!message.author.startsWith(PREFIX)) return;
+   if (!message.content.startsWith(PREFIX)) return;
 
    var args = message.content.substring(PREFIX.lenght).split(" ");
 

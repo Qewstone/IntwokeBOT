@@ -106,6 +106,7 @@ client.on('message', function(message) {
            var embed = new Discord.RichEmbed()
                .setDescription("Hello, this is embed");
            message.channel.sendEmbed(embed);
+           break;
        default:
            message.channel.sendMessage("Неверная команда!");
    }

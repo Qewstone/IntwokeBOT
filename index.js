@@ -14,6 +14,8 @@ const client = new Discord.Client({ autofetch: [
 const size = config.colors;
 const rainbow = new Array(size);
 
+const PREFIX = "i!"
+
 function generateHex() {
     return '#' + Math.floor(Math.random() * 16777215).toString(16);
 }

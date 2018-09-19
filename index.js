@@ -91,7 +91,7 @@ client.on('message', function(message) {
 
    if (!message.content.startsWith(PREFIX)) return;
 
-   var args = message.content.substring(PREFIX.lenght).trim().split(/ +/g);
+   var args = message.content.substring(PREFIX.lenght).trim().split(/\ +/g);
 
    switch (args[0].toLowerCase()) {
        case "ping":

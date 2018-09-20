@@ -86,32 +86,4 @@ client.on('ready', () => {
   setInterval(changeColor, config.speed);
 });
 
-client.on('message', function(message) {
-   if (message.author.equals(bot.user)) return;
-
-   if (!message.content.startsWith(PREFIX)) return;
-
-   var args = message.content.substring(PREFIX.lenght).trim().split(/\ +/g);
-
-   switch (args[0].toLowerCase()) {
-       case "ping":
-           message.channel.sendMessage("Pong!");
-           break;
-       case "info":
-           message.channel.sendMessage("Я ботяра куста");
-           break;
-       case "8ball":
-           if (args[1]) message.channel.sendMessage(fortunes[Math.floor(Math.random() * fortunes.lenght)]);
-           else message.channel.sendMessage("Невозможно прочесть это");
-           break;
-       case "embed":
-           var embed = new Discord.RichEmbed()
-               .setDescription("Hello, this is embed");
-           message.channel.sendEmbed(embed);
-           break;
-       default:
-           message.channel.sendMessage("Неверная команда!");
-   }
-});
-
 client.login("NDI5ODM3Mjk3OTAzNDY4NTQ0.DaHcwA.PdypKo02YvLGoFrz1deD4VZTKOk");

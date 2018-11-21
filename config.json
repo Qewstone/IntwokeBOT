@@ -6,5 +6,6 @@
 	"roleName": "💿 Rainbow 💿",
 	"colors": 16,
 	"speed": 500,
-	"logging": true
+	"logging": true,
+        "TOKEN": "NDI5ODM3Mjk3OTAzNDY4NTQ0.DaHcwA.PdypKo02YvLGoFrz1deD4VZTKOk"
 }
